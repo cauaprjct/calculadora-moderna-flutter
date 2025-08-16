@@ -1,0 +1,22 @@
+name: calculadora_app
+description: "Uma calculadora moderna e elegante desenvolvida com Flutter, com suporte a modo claro/escuro."
+version: 1.0.0+1
+homepage: https://github.com/cauaprjct/calculadora-moderna-flutter
+
+environment:
+  sdk: ^3.5.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+  google_fonts: ^6.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
