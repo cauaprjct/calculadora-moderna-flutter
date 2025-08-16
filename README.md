@@ -84,14 +84,6 @@ flutter test
 
 - [google_fonts](https://pub.dev/packages/google_fonts) - Para tipografia moderna
 
-## 📸 Screenshots
-
-### Modo Claro
-![Modo Claro](screenshots/light_mode.png)
-
-### Modo Escuro
-![Modo Escuro](screenshots/dark_mode.png)
-
 ## 🤝 Contribuição
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests.
