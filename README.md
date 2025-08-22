@@ -1,105 +1,178 @@
-# Calculadora Moderna Flutter
+<div align="center">
 
-Uma calculadora moderna e elegante desenvolvida com Flutter, com suporte a modo claro/escuro e design responsivo.
+# 📱 Calculadora Moderna Flutter
 
-## 📱 Funcionalidades
+### Uma calculadora elegante e funcional com design moderno
 
-- Operações básicas: adição, subtração, multiplicação e divisão
-- Funções especiais: porcentagem, mudança de sinal, limpar e retrocesso
-- Modo claro/escuro com toggle button (ícone de sol/lua)
-- Design responsivo para diferentes tamanhos de tela
-- Tipografia moderna com Google Fonts
-- Suporte multiplataforma (Android, iOS, Web, Desktop)
+[![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev)
+[![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)](https://dart.dev)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-## 🎨 Design
+**Uma calculadora moderna e elegante desenvolvida com Flutter, com suporte a modo claro/escuro e design responsivo.**
 
-A calculadora apresenta um design moderno com:
+[🚀 Demo](#-demo) • [✨ Features](#-features) • [🛠️ Instalação](#️-instalação) • [📱 Screenshots](#-screenshots)
 
-- Botões circulares com sombra
-- Cores harmoniosas seguindo o Material Design
-- Modo claro e escuro automático com opção de toggle
-- Tipografia Open Sans via Google Fonts
-- Layout otimizado para toque
+---
 
-## 🚀 Como Executar
+</div>
+
+## 🚀 Demo
+
+> **Experimente agora:** [Demo Web](https://cauaprjct.github.io/calculadora-moderna-flutter)
+
+## ✨ Features
+
+### 🧮 **Funcionalidades Principais**
+- ✅ **Operações básicas:** Adição, subtração, multiplicação e divisão
+- ✅ **Funções especiais:** Porcentagem, mudança de sinal, limpar e retrocesso
+- ✅ **Histórico de cálculos:** Visualize operações anteriores
+- ✅ **Validação de entrada:** Prevenção de erros matemáticos
+- ✅ **Feedback tátil:** Vibração em dispositivos móveis
+
+### 🎨 **Design & UX**
+- 🌙 **Modo claro/escuro** com toggle automático
+- 📱 **Design responsivo** para diferentes tamanhos de tela
+- 🎯 **Interface intuitiva** com botões grandes e acessíveis
+- ✨ **Animações suaves** e transições elegantes
+- 🎨 **Material Design 3** com cores harmoniosas
+
+### 🚀 **Performance**
+- ⚡ **Inicialização rápida** com otimizações de performance
+- 📱 **Multiplataforma:** Android, iOS, Web e Desktop
+- 🔧 **Código limpo** e bem estruturado
+- 🧪 **Testado** em diferentes dispositivos
+
+## 🛠️ Tecnologias Utilizadas
+
+- **Flutter** 3.8.1+ - Framework multiplataforma
+- **Dart** 3.8.0+ - Linguagem de programação
+- **Material Design 3** - Sistema de design
+- **Google Fonts** - Tipografia moderna
+- **Provider** - Gerenciamento de estado
+
+## 🚀 Início Rápido
 
 ### Pré-requisitos
+- Flutter SDK 3.8.1+
+- Dart SDK 3.8.0+
+- Android Studio / VS Code
+- Git
 
-- Flutter SDK (versão 3.0 ou superior)
-- Android Studio ou VS Code com plugins do Flutter
-- Dispositivo Android/iOS ou emulador
+### Instalação
 
-### Passos
-
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/cauaprjct/calculadora-moderna-flutter.git
-   ```
-
-2. Navegue até o diretório do projeto:
-   ```bash
-   cd calculadora-moderna-flutter
-   ```
-
-3. Obtenha as dependências:
-   ```bash
-   flutter pub get
-   ```
-
-4. Execute o app:
-   ```bash
-   flutter run
-   ```
-
-## 🏗️ Construção para Release
-
-### Android
+1. **Clone o repositório**
 ```bash
+git clone https://github.com/cauaprjct/calculadora-moderna-flutter.git
+cd calculadora-moderna-flutter
+```
+
+2. **Instale as dependências**
+```bash
+flutter pub get
+```
+
+3. **Execute o projeto**
+```bash
+# Para desenvolvimento
+flutter run
+
+# Para web
+flutter run -d chrome
+
+# Para build de produção
 flutter build apk --release
 ```
 
-### iOS
-```bash
-flutter build ios --release
+## 📱 Screenshots
+
+<div align="center">
+
+### Modo Claro
+<img src="screenshots/light_mode.png" alt="Modo Claro" width="300"/>
+
+### Modo Escuro
+<img src="screenshots/dark_mode.png" alt="Modo Escuro" width="300"/>
+
+</div>
+
+## 🏗️ Arquitetura
+
+O projeto segue uma arquitetura limpa e organizada:
+
+```
+lib/
+├── main.dart                 # Ponto de entrada da aplicação
+├── models/                   # Modelos de dados
+│   └── calculation.dart
+├── providers/                # Gerenciamento de estado
+│   ├── calculator_provider.dart
+│   └── theme_provider.dart
+├── screens/                  # Telas da aplicação
+│   └── calculator_screen.dart
+├── widgets/                  # Widgets reutilizáveis
+│   ├── calculator_button.dart
+│   ├── display_widget.dart
+│   └── theme_toggle.dart
+└── utils/                    # Utilitários
+    ├── constants.dart
+    └── calculator_logic.dart
 ```
 
-### Web
-```bash
-flutter build web
-```
+## 🎯 Funcionalidades Detalhadas
 
-### Windows
-```bash
-flutter build windows
-```
+### Operações Suportadas
+- ➕ **Adição:** Soma de números
+- ➖ **Subtração:** Diferença entre números
+- ✖️ **Multiplicação:** Produto de números
+- ➗ **Divisão:** Quociente de números (com proteção contra divisão por zero)
+- 📊 **Porcentagem:** Cálculos percentuais
+- 🔄 **Mudança de sinal:** Alternar entre positivo/negativo
+
+### Controles Especiais
+- 🗑️ **AC (All Clear):** Limpa toda a operação
+- ⬅️ **Backspace:** Remove o último dígito
+- 🟰 **Igual:** Executa o cálculo
+- 🌙 **Toggle Tema:** Alterna entre modo claro/escuro
 
 ## 🧪 Testes
 
-Para executar os testes:
 ```bash
+# Executar todos os testes
 flutter test
+
+# Executar testes com coverage
+flutter test --coverage
+
+# Testes de widget
+flutter test test/widget_test.dart
 ```
 
-## 📦 Dependências
+## 🤝 Contribuindo
 
-- [google_fonts](https://pub.dev/packages/google_fonts) - Para tipografia moderna
-
-## 🤝 Contribuição
-
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests.
+Contribuições são bem-vindas! Siga estes passos:
 
 1. Fork o projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
-3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Push para a branch (`git push origin feature/AmazingFeature`)
+2. Crie uma branch para sua feature (`git checkout -b feature/nova-feature`)
+3. Commit suas mudanças (`git commit -m 'Adiciona nova feature'`)
+4. Push para a branch (`git push origin feature/nova-feature`)
 5. Abra um Pull Request
 
 ## 📄 Licença
 
-Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-## 📧 Contato
+## 🙏 Agradecimentos
 
-cauaprjct - [@cauaprjct](https://github.com/cauaprjct)
+- [Flutter Team](https://flutter.dev/) pelo framework incrível
+- [Material Design](https://material.io/) pelas diretrizes de design
+- [Google Fonts](https://fonts.google.com/) pela tipografia
 
-Link do Projeto: [https://github.com/cauaprjct/calculadora-moderna-flutter](https://github.com/cauaprjct/calculadora-moderna-flutter)
+---
+
+<div align="center">
+
+**Desenvolvido com ❤️ por [Cauã](https://github.com/cauaprjct)**
+
+⭐ **Gostou do projeto? Deixe uma estrela!**
+
+</div>
